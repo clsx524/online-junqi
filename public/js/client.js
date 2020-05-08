@@ -323,7 +323,7 @@ var Client = (function(window) {
         for (var i=0; i<gameState.validMoves.length; i++) 
         {
             move = gameState.validMoves[i];
-
+            if (move === null) continue;
             if (move.type === 'move')
             {
                 if (move.pieceCode === piece && move.startSquare === square.attr('id')) 
