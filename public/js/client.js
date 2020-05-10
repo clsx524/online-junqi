@@ -320,6 +320,8 @@ var Client = (function(window) {
 
         // Highlight any valid moves
         squares.removeClass('valid-move valid-capture valid-equal valid-dies');
+
+        console.log("moves", gameState.validMoves);
         for (var i=0; i<gameState.validMoves.length; i++) 
         {
             move = gameState.validMoves[i];
